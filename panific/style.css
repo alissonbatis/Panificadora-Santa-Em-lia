@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Fraunces", serif;
+}
+nav{
+    
+    background-color: bisque;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.nav-botoes{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    
+    
+}
+div.nav-botoes button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: bisque;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+
+}
+
+div.nav-botoes button:hover{
+    background-color: rgb(255, 237, 214);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+main{ 
+    background-image: url(https://avatars.mds.yandex.net/get-altay/5457654/2a0000017cc7ce71a8c518178b4330c85ab0/XXL);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    
+    
+}
+main section h1{ 
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+cite{ 
+    color: white;
+}
+
+div.segunda-parte{ 
+    
+    height: 500px;
+    display: flex;
+    padding-left: 30px;
+    font-family: "Fraunces", serif;
+    
+}
+div.segunda-parte section h1 { 
+    font-size: 40px;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    margin-bottom:40px ;
+    
+}
+div.Estabelecimentos section h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+
+}
+img{
+    width: 100%;
+}
+
+
+
+
+
+div.segunda-parte section p{ 
+    font-size: 30px;
+    
+    
+}
+.Estabelecimentos{
+    height: 600px;
+    display: flex;
+    padding-left: 30px;
+}
+
+div.mapBox {
+    width:100%;
+    
+
+}
+.blocoJP{
+    background-color: rgb(165, 165, 165);
+    width: 33.1%;
+    border-radius: 6px;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+
+}
+section.blocoJP h2{
+    padding: 10px;
+}
+.blocosLocal{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+div.redes {
+    background-color: black;
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(197, 197, 197);
+    
+
+}
+.alo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 30px;
+}
+li > a{
+    
+    padding: 20px;
+}
+
+.fundo {
+
+    background-image: linear-gradient(
+        bisque 30% ,
+        rgb(255, 206, 146)
+    );
+}
