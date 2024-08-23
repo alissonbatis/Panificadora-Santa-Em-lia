@@ -4,9 +4,23 @@
     margin: 0;
     font-family: "Fraunces", serif;
 }
+
+/* 
+    CORES: 
+    rgb(245,228,187) CLARO
+    rgb(218,208,182) escurinho
+        
+
+*/
+
+
+
+
+
+
 nav{
     
-    background-color: bisque;
+    background-color: rgb(245,228,187);
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -30,7 +44,7 @@ div.nav-botoes button {
     width: 100%;
     height: 100%;
     border: none;
-    background-color: bisque;
+    background-color: rgb(245,228,187);
     font-family: "Fraunces", serif;
     font-size: 15px;
 
@@ -45,7 +59,7 @@ a {
 }
 main{ 
     background-image: url(https://avatars.mds.yandex.net/get-altay/5457654/2a0000017cc7ce71a8c518178b4330c85ab0/XXL);
-    height: 700px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-color: rgba(0,0,0,0.5);
@@ -78,28 +92,25 @@ div.segunda-parte section h1 {
     margin-bottom:40px ;
     
 }
-div.Estabelecimentos section h1{
-    font-size: 40px;
-    padding-bottom: 30px;
-
-}
-img{
-    width: 100%;
-}
-
-
-
-
-
 div.segunda-parte section p{ 
     font-size: 30px;
     
     
 }
+
+
+
+div.Estabelecimentos section h1{
+    font-size: 40px;
+
+}
+img{
+    width: 100%;
+}
 .Estabelecimentos{
     height: 600px;
     display: flex;
-    padding-left: 30px;
+    padding: 30px 30px 100px;
 }
 
 div.mapBox {
@@ -107,25 +118,69 @@ div.mapBox {
     
 
 }
-.blocoJP{
-    background-color: rgb(165, 165, 165);
-    width: 33.1%;
-    border-radius: 6px;
-    margin-top: 50px;
+.bloco1, .bloco2 , .bloco3{
     text-align: center;
     color: black;
+    height: 100%;
 
 }
-section.blocoJP h2{
-    padding: 10px;
+.bloco1:hover, .bloco2:hover , .bloco3:hover{
+    background-color: rgb(255, 246, 235);
 }
-.blocosLocal{
-    background-color: aqua;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+
+
+
+.bloco1{
+    grid-column: 1;
+    grid-row: 2;
+    
     
 }
+.bloco2{
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.bloco3{
+    grid-column: 3;
+    grid-row: 2;
+    
+    
+}
+
+
+
+
+section  h2{
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.blocosLocal{
+    display: grid;
+    grid-auto-rows: 100px 450px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(218,208,182);
+    
+    
+}
+
+.estado{
+    grid-column: span 3;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
 div.redes {
     background-color: black;
     height: 300px;
@@ -153,9 +208,5 @@ li > a{
 }
 
 .fundo {
-
-    background-image: linear-gradient(
-        bisque 30% ,
-        rgb(255, 206, 146)
-    );
+    background-color: rgb(245,228,187);
 }
