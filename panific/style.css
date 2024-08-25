@@ -14,10 +14,6 @@
 */
 
 
-
-
-
-
 nav{
     
     background-color: rgb(245,228,187);
@@ -39,6 +35,7 @@ nav{
     background-color: rgb(31, 31, 31);
     
     
+    
 }
 div.nav-botoes button {
     width: 100%;
@@ -47,6 +44,7 @@ div.nav-botoes button {
     background-color: rgb(245,228,187);
     font-family: "Fraunces", serif;
     font-size: 15px;
+    transition: 0.3s;
 
 }
 
@@ -110,7 +108,13 @@ img{
 .Estabelecimentos{
     height: 600px;
     display: flex;
-    padding: 30px 30px 100px;
+    padding: 30px 30px 200px;
+}
+hr{
+    background-color: black;
+    width: 40%;
+    padding: 1px;
+    margin: 0px 0px 50px;
 }
 
 div.mapBox {
@@ -119,13 +123,16 @@ div.mapBox {
 
 }
 .bloco1, .bloco2 , .bloco3{
+    background-color: black;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
 
 }
 .bloco1:hover, .bloco2:hover , .bloco3:hover{
-    background-color: rgb(255, 246, 235);
+    transform: scale(1.01);
 }
 
 
@@ -147,6 +154,27 @@ div.mapBox {
     
     
 }
+section.bloco1 button , section.bloco2 button , section.bloco3 button{
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    margin-top:5px ;
+    font-size: 15px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    
+}
+section.bloco1 button:hover , section.bloco2 button:hover , section.bloco3 button:hover{
+    background-color: rgb(136, 136, 136);
+}
+
+
+
+
+div.mapBox img{
+    border-start-start-radius: 10px;
+    border-top-right-radius:10px ;
+}
 
 
 
@@ -166,7 +194,7 @@ section  h2{
     grid-auto-rows: 100px 450px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    background-color: rgb(218,208,182);
+    
     
     
 }
@@ -181,32 +209,42 @@ section  h2{
 
 
 
-div.redes {
+footer {
     background-color: black;
-    height: 300px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: rgb(197, 197, 197);
-    
-
-}
-.alo{
+    padding: 0px 50px;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    gap: 30px;
-    font-size: 30px;
-}
-li > a{
+    color: rgb(255, 255, 255);
     
-    padding: 20px;
+
 }
 
+
+.listRedes{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2em;
+    gap: 30px;
+}
+li > a{
+    padding: 15px;
+    border-radius: 50%;
+}
+li > a:hover{
+    background-color: rgb(24, 24, 24);
+}
 .fundo {
     background-color: rgb(245,228,187);
+}
+.termos{
+    gap: 50px;
+    display: flex;
+    
+}
+div.termos p a:hover{
+    color: rgb(0, 162, 255);
 }
