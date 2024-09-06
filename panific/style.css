@@ -19,17 +19,41 @@ div.logo a img{
 
 
 nav{
-    
     background-color: rgb(245,228,187);
     display: flex;
     text-align: center;
     justify-content: space-between;
     height: 5rem;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 5px 30px;
 
 }
+.mobileMenu{
+    display: none ;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    
+}
+.mobileMenu ul li{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(245,228,187);
+    
+}
+
+.hamburger,.close{
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+.open{
+    display: block;
+}
+
 .nav-botoes{
     width: 400px;
     height: 100%;
@@ -110,93 +134,16 @@ img{
     width: 100%;
 }
 .Estabelecimentos{
-    display: flex;
     padding: 30px 30px 100px;
 }
-hr{
+
+
+
+hr.estabele{
     background-color: black;
     width: 40%;
     padding: 1px;
     margin: 0px 0px 50px;
-}
-
-
-.estado{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-div.mapBox {
-    width:100%;
-    
-}
-
-.blocosLocal{
-    display:flex;
-    height: 400px;
-    justify-content: space-around;
-    gap: 10px;
-    max-width: 1200px;
-}
-
-
-.bloco1, .bloco2 , .bloco3{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    transition: 0.5s;
-    max-width: 350px;
-
-}
-li.bloco1 div.mapBox,li.bloco2 div.mapBox,li.bloco3 div.mapBox {
-    height: 70%;
-    background-position: center;
-    background-size: cover;
-    border-start-start-radius: 10px;
-    border-top-right-radius:10px
-} 
-li.bloco1 div.mapBox{
-    background-image: url(imagens/padaria/padaria.jpg);
-}
-li.bloco2 div.mapBox{
-    background-image: url(imagens/padaria/praça.jpg);
-}
-li.bloco3 div.mapBox{
-    background-image: url(imagens/padaria/padaria.jpg);
-}
-
-
-
-
-.bloco1:hover, .bloco2:hover , .bloco3:hover{
-    transform: scale(1.01);
-} 
-    
-li.bloco1 button , li.bloco2 button , li.bloco3 button{
-    cursor: pointer;
-    border-radius: 40px;
-    border: none;
-    padding: 10px;
-    margin: 0px 60px 15px;
-    margin-top:5px ;
-    font-size: 15px;
-    background-color: rgb(88, 88, 88);
-    color: white;
-    
-}
-
-
-
-
-li.bloco1 button:hover , li.bloco2 button:hover , li.bloco3 button:hover{
-    background-color: rgb(136, 136, 136);
 }
 
 
@@ -208,13 +155,109 @@ section  h2{
     justify-content: center;
     
 }
+.blocoSliderETexto{
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    gap: 150px;
+}
+.slider{
+    margin: 0;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
 
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 500px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
 
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
 
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
 
+}
+.navigation-auto div{
+    border: 2px solid wheat;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 500px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffffff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffffff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffffff;
+}
 
+.textoslide{
 
-
+    
+    height: 350px;
+    width: 500px;
+    border-radius: 5px;
+    
+}
+.textoslide p {
+    text-align: justify;
+    font-size: 1.5em;
+}
 
 
 footer {
@@ -234,7 +277,17 @@ footer a {
     
 
 }
-
+hr.divisaocopy{
+    color: #ffffff;
+    margin:0px 40px;
+    
+}
+.copy{
+    padding: 20px;
+    background-color: black; 
+    color: #ffffff; 
+    text-align: center;
+}
 
 .listRedes{
     height: 50px;
@@ -244,11 +297,11 @@ footer a {
     gap: 10px;
     background-color: rgb(0, 0, 0);
 }
-li > a{
+ul.listRedes li > a{
     padding: 15px;
     border-radius: 50%;
 }
-li > a:hover{
+ul.listRedes li > a:hover{
     background-color: rgb(24, 24, 24);
 }
 .fundo {
@@ -268,8 +321,37 @@ li > a:hover{
 h4{
     margin-bottom: 10px;
 }
-
+@media (max-width: 1024px){
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    cite p {
+        font-size: 1.5em;
+    }
+    .blocoSliderETexto{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
+    .textoslide{
+        height: 150px;
+    }
+}
 @media (max-width: 450px){
+    .nav-botoes{
+        display: none;
+
+    }
+    .hamburger{ 
+        display: block;
+    }
+
+
+
     main section h1 {
         font-size: 50px;
     }
@@ -300,10 +382,5 @@ h4{
      }
     .Estabelecimentos{
         height: 1200px;
-    }
-    ul.blocosLocal{
-        height: 300px;
-        display: flex;
-        flex-wrap: wrap;
     }
 }
